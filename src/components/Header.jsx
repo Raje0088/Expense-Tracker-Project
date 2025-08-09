@@ -59,6 +59,7 @@ const Header = () => {
         </span>
         <div className={styles.navbar}>
           {auth && <button onClick={handleToPremium} className={styles["shine-button"]}>Premium {totalExpenses}</button>}
+          {auth && <button onClick={()=>{navigate("/cart")}} className={styles["shine-button"]}>Product</button>}
           {!auth && <button onClick={logoutHandler}>Login</button>}
           {auth && <button onClick={logoutHandler}>Logout</button>}
           {totalExpenses >=10000 && <button onClick={toggleTheme}>{theme ? "Light" : "Dark"}</button>}

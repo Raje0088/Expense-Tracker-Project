@@ -28,6 +28,7 @@
   align-items: center;
   justify-content: center;
   background: hsl(80, 96%, 79%);
+  margin:10px;
 }
 .boxheader {
   width: 100%;
